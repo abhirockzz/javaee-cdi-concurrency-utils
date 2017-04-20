@@ -1,3 +1,13 @@
+## To run on Docker
+
+- Shortcut
+	- `docker pull abhirockzz/javaee-cdi-concurrency-utils`
+	- `docker run -it -p 8080:8080 abhirockzz/javaee-cdi-concurrency-utils`
+
+- Build it yourself using the `Dockerfile` in the project (it [uses this Payara image](https://hub.docker.com/r/airhacks/payara/) as the base)
+	- `docker build -t <your tag> .`
+	- `docker run -it -p 8080:8080 <your tag>` 
+
 ## To run
 
 - `git clone` the project and execute `mvn clean install`
